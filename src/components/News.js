@@ -1,0 +1,248 @@
+import React, { Component } from 'react';
+import Newsitems from './Newsitems';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+export class News extends Component {
+  articles = [{
+    "source": {
+      "id": "the-washington-post",
+      "name": "The Washington Post"
+    },
+    "author": "Rick Noack, Haq Nawaz Khan",
+    "title": "Afghanistan paralyzed as internet blackout stretches into second day - The Washington Post",
+    "description": "Nearly all links with the outside world are disrupted, grounding planes and closing businesses two weeks after the Taliban first signaled plans to ban fiber-optic internet.",
+    "url": "https://www.washingtonpost.com/world/2025/09/30/afghanistan-internet-blackout-taliban/",
+    "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/HRHI4GJEGUSPUBZDWWREYYYBEU_size-normalized.jpg&w=1440",
+    "publishedAt": "2025-09-30T14:19:09Z",
+    "content": "Afghanistans internet shutdown entered its second day Tuesday, as nearly all digital and phone links with the outside world remained disrupted, grounding planes and prompting the closure of businesse… [+30 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "Hollywood Reporter"
+    },
+    "author": "James Hibberd",
+    "title": "David Cross Slams Bill Burr, Dave Chappelle and Others Performing at Saudi Comedy Festival: “Disgusted” - The Hollywood Reporter",
+    "description": "In a scathing open letter, Cross is the latest to criticize his fellow comedians for participating in the Riyadh Comedy Festival: \"I am deeply disappointed in this whole gross thing. How can any of us take you seriously again?\"",
+    "url": "http://www.hollywoodreporter.com/news/general-news/david-cross-bill-burr-dave-chappelle-riyadh-comedy-festival-1236388959/",
+    "urlToImage": "https://www.hollywoodreporter.com/wp-content/uploads/2019/05/david-cross-ashville-orange-peel-8619-h_2019.jpg?w=1296&h=730&crop=1",
+    "publishedAt": "2025-09-30T13:47:56Z",
+    "content": "David Cross has become the latest comedian to criticize his fellow comics for participating in Saudi Arabia‘s Riyadh Comedy Festival.\r\nCross wrote a rather scathing open letter denouncing performers … [+4308 chars]"
+  },
+  {
+    "source": {
+      "id": "usa-today",
+      "name": "USA Today"
+    },
+    "author": null,
+    "title": "Tyreek Hill carted off with knee injury in Miami Dolphins vs. New York Jets game - USA Today",
+    "description": "Tyreek Hill was carted off the field with an apparent serious knee injury early in the third quarter of Miami's game against the New York Jets.",
+    "url": "https://www.usatoday.com/picture-gallery/sports/nfl/2025/09/30/tyreek-hill-injury-football-photos/86434144007/",
+    "urlToImage": "https://www.usatoday.com/gcdn/authoring/authoring-images/2025/09/30/NPPP/86430659007-usatsi-27207951.jpg?crop=1605,903,x0,y150&width=1605&height=903&format=pjpg&auto=webp",
+    "publishedAt": "2025-09-30T13:35:59Z",
+    "content": "(Editors note: graphic image) Miami Dolphins wide receiver Tyreek Hill suffered a gruesome-looking leg injury in the second half of his team's 27-21 win over the New York Jets during Week 4 at Hard R… [+260 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "Whitehouse.gov"
+    },
+    "author": null,
+    "title": "President Trump Deploys Federal Resources to Crush Violent Radical Left Terrorism in Portland - The White House (.gov)",
+    "description": "The Radical Left’s reign of terror in Portland ends now, with President Donald J. Trump mobilizing federal resources to stop Antifa-led hellfire in its",
+    "url": "https://www.whitehouse.gov/articles/2025/09/president-trump-deploys-federal-resources-to-crush-violent-radical-left-terrorism-in-portland/",
+    "urlToImage": "https://www.whitehouse.gov/wp-content/uploads/2025/03/WH47-Social-Share-Card.jpg",
+    "publishedAt": "2025-09-30T13:21:06Z",
+    "content": "The Radical Lefts reign of terror in Portland ends now, with President Donald J. Trump mobilizing federal resources to stop Antifa-led hellfire in its tracks. While Democratpoliticiansdenyreality, it… [+3018 chars]"
+  },
+  {
+    "source": {
+      "id": "nbc-news",
+      "name": "NBC News"
+    },
+    "author": "Pilar Melendez, Cristian Santana",
+    "title": "2nd detainee dies after Dallas ICE facility shooting - NBC News",
+    "description": "Miguel Ángel García-Hernández, a detainee who was shot at the Immigration and Customs Enforcement facility in Dallas has died, according to a LULAC national spokesperson.",
+    "url": "https://www.nbcnews.com/news/us-news/2nd-detainee-dies-dallas-ice-facility-shooting-rcna234658",
+    "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2025-09/250930-ice-dallas-rs-a32de8.jpg",
+    "publishedAt": "2025-09-30T13:07:00Z",
+    "content": "A second detainee shot at the Immigration and Customs Enforcement facility in Dallas last week has died, according to ICE and a LULAC national spokesperson.\r\nMiguel Ángel García-Hernández, 32, died a… [+2112 chars]"
+  },
+  {
+    "source": {
+      "id": "techcrunch",
+      "name": "TechCrunch"
+    },
+    "author": "Ivan Mehta",
+    "title": "Nothing launches AI tool for building mini apps using prompts - TechCrunch",
+    "description": "Nothing on Monday revealed Playground, an AI tool that lets users create apps with simple text prompts and deploy them to a platform of sorts known as Essential Apps.",
+    "url": "https://techcrunch.com/2025/09/30/nothing-launches-ai-tool-for-building-mini-apps-using-prompts/",
+    "urlToImage": "https://techcrunch.com/wp-content/uploads/2025/09/Carls-phone-with-Essential-Apps.jpg?resize=1200,675",
+    "publishedAt": "2025-09-30T12:31:49Z",
+    "content": "AI-powered app development is really taking off, and smartphone maker Nothing seems intent on capitalizing on the bandwagon: the company on Tuesday revealed Playground, an AI tool that lets users cre… [+3230 chars]"
+  },
+  {
+    "source": {
+      "id": "associated-press",
+      "name": "Associated Press"
+    },
+    "author": "Claudia Ciobanu",
+    "title": "Ukrainian detained in Poland over 2022 Nord Stream gas pipeline explosions - AP News",
+    "description": "A Ukrainian man suspected of causing explosions that damaged the Nord Stream gas pipelines in 2022 has been arrested in Poland. A spokesperson for the District Prosecutor’s Office in Warsaw confirmed the arrest on Tuesday. The man, identified only as Volodymy…",
+    "url": "https://apnews.com/article/nord-stream-attack-poland-arrest-9764c17af74e594e40956f298c4d0db2",
+    "urlToImage": "https://dims.apnews.com/dims4/default/a65a277/2147483647/strip/true/crop/8688x4887+0+453/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Ff3%2F04%2F1e5b4427213c842d2ba6c55f1221%2F92835bb8857040d4961046c50ada93bc",
+    "publishedAt": "2025-09-30T12:24:00Z",
+    "content": "WARSAW, Poland (AP) A Ukrainian man suspected of being involved in causing undersea explosions that damaged the Nord Stream gas pipelines between Russia and Germany in 2022 was arrested in Poland, a … [+1897 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "Deadline"
+    },
+    "author": "Melanie Goodfellow",
+    "title": "SAG-AFTRA Responds To AI Actress Tilly Norwood Furore: “Creativity Is & Should Remain Human-Centered” - Deadline",
+    "description": "SAG-AFTRA Responds To AI Actress Tilly Norwood Furore: “Creativity Is & Should Remain Human-Centered”",
+    "url": "http://deadline.com/2025/09/sag-aftra-responds-ai-actress-tilly-norwood-1236565959/",
+    "urlToImage": "https://deadline.com/wp-content/uploads/2025/09/MixCollage-25-Sep-2025-10-53-AM-6889.jpg?w=1024",
+    "publishedAt": "2025-09-30T12:24:00Z",
+    "content": "Hollywood’s powerful actors union SAG-AFTRA has responded to controversial news, which Deadline broke over the weekend, that talent agents are looking to sign AI-generated actress Tilly Norwood for r… [+2773 chars]"
+  },
+  {
+    "source": {
+      "id": "the-verge",
+      "name": "The Verge"
+    },
+    "author": "Lawrence Ulrich",
+    "title": "The EV tax credit is dead — here’s what happens next - The Verge",
+    "description": "The $7,500 federal EV tax credit is no more, thanks to Trump and the Republicans. Now the auto industry will have to build affordable EVs with no help from the government.",
+    "url": "https://www.theverge.com/transportation/787281/ev-tax-credit-sales-lease-trump-climate",
+    "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/257977_clock_run_out_on_EVs_CVirginia-.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+    "publishedAt": "2025-09-30T12:00:00Z",
+    "content": "\u003Cul\u003E\u003Cli\u003E\u003C/li\u003E\u003Cli\u003E\u003C/li\u003E\u003Cli\u003E\u003C/li\u003E\u003C/ul\u003E\r\nThe EV tax credit is dead heres what happens next\r\nEV sales are sure to dip, and automakers are pulling back their investments. Now the real challenge will emerg… [+12385 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "PhoneArena"
+    },
+    "author": "Adrian Diaconescu",
+    "title": "All those familiar Galaxy S26 Pro and S26 Ultra camera specs are now practically etched in stone - PhoneArena",
+    "description": "If you've been disappointed by some of the latest rumors regarding Samsung's Galaxy S26 series cameras, the newest report on the matter is unlikely to do much to cheer you up.",
+    "url": "https://www.phonearena.com/news/samsung-galaxy-s26-pro-galaxy-s26-ultra-camera-specs-etched-in-stone_id174518",
+    "urlToImage": "https://m-cdn.phonearena.com/images/article/174518-wide-two_1200/All-those-familiar-Galaxy-S26-Pro-and-S26-Ultra-camera-specs-are-now-practically-etched-in-stone.jpg",
+    "publishedAt": "2025-09-30T10:58:30Z",
+    "content": "A discussion is a place, where people can voice their opinion, no matter if it\r\n is positive, neutral or negative. However, when posting, one must stay true to the topic, and not just share some\r\n ra… [+1082 chars]"
+  },
+  {
+    "source": {
+      "id": "cbs-news",
+      "name": "CBS News"
+    },
+    "author": "Haley  Ott",
+    "title": "Hamas leaning toward accepting Trump's Gaza ceasefire plan quickly, source tells CBS News - CBS News",
+    "description": "Hamas and other Palestinian factions are expected to present their response to Trump's Gaza ceasefire plan quickly, a source tells CBS News.",
+    "url": "https://www.cbsnews.com/news/trump-gaza-plan-israel-hamas-ceasefire-proposal-reaction-expected/",
+    "urlToImage": "https://assets1.cbsnewsstatic.com/hub/i/r/2025/09/30/723d5c70-5b60-42c9-9779-9c2585dc19f7/thumbnail/1200x630/2ccb3bb8dd18bd14918d5835fc12ee58/gettyimages-2238138813.jpg",
+    "publishedAt": "2025-09-30T10:15:00Z",
+    "content": "Hamas and other Palestinian factions are leaning toward accepting President Trump's plan to end the war in Gaza, and they will present the group's response to Egyptian and Qatari mediators on Wednesd… [+4863 chars]"
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "CNBC"
+    },
+    "author": "Pia Singh",
+    "title": "Stock futures fall as U.S. government shutdown looms, but Wall Street heads for monthly gains: Live updates - CNBC",
+    "description": "Stock futures fell as a potential U.S. government shutdown loomed. Despite the latest declines, Wall Street was headed for an unusually strong September.",
+    "url": "https://www.cnbc.com/2025/09/29/stock-market-today-live-updates.html",
+    "urlToImage": "https://image.cnbcfm.com/api/v1/image/108196952-17575211122025-09-10t161616z_2056288601_rc22pga4nq4r_rtrmadp_0_usa-stocks.jpeg?v=1757610462&w=1920&h=1080",
+    "publishedAt": "2025-09-30T10:15:00Z",
+    "content": "Stock futures fell Tuesday as a potential U.S. government shutdown loomed. Despite the latest declines, Wall Street was headed for an unusually strong September.\r\nFutures tied to the Dow Jones Indust… [+2754 chars]"
+  },
+  {
+    "source": {
+      "id": "nbc-news",
+      "name": "NBC News"
+    },
+    "author": "Rohan Nadkarni",
+    "title": "The New York Mets paid more than $340 million to be a World Series contender. They didn't even make the playoffs - NBC News",
+    "description": "Five MLB teams spent more than $250 million on payroll this season. Only the New York Mets missed the postseason.",
+    "url": "https://www.nbcnews.com/sports/mlb/new-york-mets-paid-340-million-world-series-contender-didnt-even-make-rcna234552",
+    "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2025-09/250929-new-york-mets-ew-654p-795b12.jpg",
+    "publishedAt": "2025-09-30T10:02:40Z",
+    "content": "After a win against the San Francisco Giants on July 27, the New York Mets had 62 wins tied for second-most in MLB and a 96.8% chance to make the postseason, according to Fangraphs.\r\nTwo months and t… [+3631 chars]"
+  },
+  {
+    "source": {
+      "id": "politico",
+      "name": "Politico"
+    },
+    "author": "Dasha Burns",
+    "title": "What Trump told POLITICO about the impending government shutdown - Politico",
+    "description": "\"The Democrats are deranged,\" Trump said during a brief phone call.",
+    "url": "https://www.politico.com/news/2025/09/30/what-trump-told-politico-about-the-impending-government-shutdown-00586050",
+    "urlToImage": "https://www.politico.com/dims4/default/resize/1200/quality/90/format/jpg?url=https%3A%2F%2Fstatic.politico.com%2F03%2F74%2F3a22c96448e2b4ec07a5fb6eb2cd%2Funlimiteduse-09-29-2025-white-house-isp-0024.jpg",
+    "publishedAt": "2025-09-30T09:50:00Z",
+    "content": "The video post followed a meeting Trump hosted at the White House with congressional leaders\r\n a seemingly last-ditch effort to avoid a shutdown. There was no breakthrough and both sides seemed resig… [+1981 chars]"
+  },
+  {
+    "source": {
+      "id": "abc-news",
+      "name": "ABC News"
+    },
+    "author": "ABC News - Breaking News, Latest News and Videos",
+    "title": "Charlie Javice sentenced to 7 years in prison for $175M fraud - ABC News - Breaking News, Latest News and Videos",
+    "description": null,
+    "url": "https://abcnews.go.com/Business/charlie-javice-founder-lied-175m-startup-faces-sentencing/story?id\\\\u003d126034577",
+    "urlToImage": null,
+    "publishedAt": "2025-09-30T09:01:49Z",
+    "content": null
+  },
+  {
+    "source": {
+      "id": null,
+      "name": "NBCSports.com"
+    },
+    "author": "Michael David Smith",
+    "title": "Sauce Gardner frustrated with officials: I get called for more stuff - NBC Sports",
+    "description": "Jets cornerback Sauce Gardner said after Monday night's loss to the Dolphins that he feels like he and the Jets are getting unfair treatment from the officials.",
+    "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/sauce-gardner-frustrated-with-officials-i-get-called-for-more-stuff",
+    "urlToImage": "https://nbcsports.brightspotcdn.com/dims4/default/be81a3f/2147483647/strip/true/crop/8640x4860+0+450/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2F1b%2F96%2F2116f3254e3dacf082aa1074c246%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F2238207159",
+    "publishedAt": "2025-09-30T08:57:03Z",
+    "content": "Jets cornerback Sauce Gardner said after Monday nights loss to the Dolphins that he feels like he and the Jets are getting unfair treatment from the officials.\r\nGardner was flagged for defensive pass… [+1054 chars]"
+  }]
+
+  constructor() {
+    super();
+    console.log("this is from newitems consturctor")
+    this.state = {
+      articles: this.articles,
+      loading: false
+    }
+  }
+  async componentDidMount(){
+    console.log("kash");
+    let url ="https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=dec6391d925b4696b003190c69a3ef7c";
+    let data =  await fetch(url);
+    let parsedata = await data.json()
+    console.log(parsedata)
+    // this.setState({articles :parsedata.articles})
+  }
+  render() {
+    console.log("huuu")
+    return (
+      <div className="container my-3">
+        <h2 className="text-center mb-4">Latest News</h2>
+        <div className="row">
+          {this.state.articles.map((element) => {
+            return <div className="col-md-4 mb-4" key={element.url}>
+              <Newsitems title={element.title?element.title:""} description={element.description?element.description: ""} imageUrl={element.urlToImage} newsUrl={element.url} />
+            </div>
+          })}
+        </div>
+      </div>
+    );
+  }
+}
+
+export default News;

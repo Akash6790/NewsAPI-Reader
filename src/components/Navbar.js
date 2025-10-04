@@ -18,7 +18,28 @@ export class Navbar extends Component {
         <li className="nav-item">
           <a className="nav-link text-white" href="/about">About</a>
         </li> 
-      </ul>
+     
+     
+            <li className="nav-item"><a className="nav-link text-white" href="/about">Business</a> </li>
+             <li className="nav-item">
+          <a className="nav-link text-white" href="/about">Entertainment</a>
+        </li>
+             <li className="nav-item">
+          <a className="nav-link text-white" href="/about">General</a>
+        </li>
+             <li className="nav-item">
+          <a className="nav-link text-white" href="/about">Health</a>
+        </li>
+             <li className="nav-item">
+          <a className="nav-link text-white" href="/about">Science</a>
+        </li>
+             <li className="nav-item">
+          <a className="nav-link text-white" href="/about">Sports</a>
+        </li>
+             <li className="nav-item">
+          <a className="nav-link text-white" href="/about">Technology</a>
+        </li>
+        </ul>
       <form className="d-flex">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn btn-outline-success bg-warning text-white" type="submit">Search</button>
@@ -32,3 +53,4 @@ export class Navbar extends Component {
 }
 
 export default Navbar
+

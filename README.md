@@ -1,3 +1,4 @@
+# NewsAPI-Reader
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,74 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+#added one button
+
+## Git Workflow: Commit and Pull Request
+
+### Using Standard Git Commands and GitHub Web Interface
+
+#### Step 1: Commit Changes
+1. Stage your changes:
+   ```
+   git add .
+   ```
+   (Or stage specific files: `git add <file_path>`)
+
+2. Commit the changes:
+   ```
+   git commit -m "Your commit message describing the changes"
+   ```
+
+#### Step 2: Create and Push a Branch
+1. Create a new branch (replace `feature-branch` with your branch name):
+   ```
+   git checkout -b feature-branch
+   ```
+
+2. Push the branch to GitHub:
+   ```
+   git push -u origin feature-branch
+   ```
+
+#### Step 3: Create Pull Request via GitHub Web Interface
+1. Go to your repository on GitHub.com
+2. Click the "Compare & pull request" button that appears after pushing
+3. Fill in the PR title and description
+4. Click "Create pull request"
+
+### Using GitHub CLI (gh)
+
+#### Step 1: Commit Changes
+1. Stage your changes:
+   ```
+   git add .
+   ```
+
+2. Commit the changes:
+   ```
+   git commit -m "Your commit message"
+   ```
+
+#### Step 2: Create and Push a Branch
+1. Create a new branch:
+   ```
+   git checkout -b blackboxai/feature-branch
+   ```
+
+2. Push the branch:
+   ```
+   git push -u origin blackboxai/feature-branch
+   ```
+
+#### Step 3: Create Pull Request
+1. Use GitHub CLI to create the PR:
+   ```
+   gh pr create --title "Your PR title" --body "Description of changes"
+   ```
+
+   Or interactively:
+   ```
+   gh pr create
+   ```
+

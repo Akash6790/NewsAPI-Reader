@@ -1,17 +1,15 @@
-// import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/Navbar';
-import React, { Component } from 'react'
-import News from './components/News';
 
-export default class App extends Component {
-  a = "akash"
-  render() {
-    return (
-      <div>
-        <Navbar />
-        <News/>
-      </div>
-    )
-  }
+import './App.css';
+import News from './components/News';
+import Navbar from './components/Navbar'
+
+function App() {
+  return (
+  <div>
+    <Navbar/>
+     <News pageSize={6} country="us"/>
+  </div>
+  );
 }
+
+export default App;
